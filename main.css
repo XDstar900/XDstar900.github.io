@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Short+Stack&display=swap'); 
+/* Title and header font is Short Stack. Paracgraph text is Comic Neue. Both fonts seem playful and pleasant, matching the atomsphere that the website should give. */
+
+body { /* Sets the default style for all the elements */
+    margin: 0; /* Removes the default margin */
+    padding: 0; /* Removes default padding, if any */
+    background-color: #131811; /* Dark background color for the page */
+    color: #ffffff; /* Default White text color */
+}
+
+.banner{ /* Styles for the banner section and its elements */
+    font-weight: bold; /* Bold text */
+    font-family: Short Stack, cursive; /* Font family for the banner elements */
+    background-color: #000066; /* Dark blue background overrides the body background. */
+    padding: 10px 150px; /* Padding around the elements to create the banner and separates the title from the other elements.*/
+}
+
+.banner h1{ /* Styles for the main heading in the banner (Our Game Awards) */
+    font-size: 50px;
+    text-align: center; /* Centered text */
+    margin-top: 2.5%; /* Margin above the text */
+    font-weight: bold; /* Bold text */
+    color: #ffffff; /* White text color to override the default <a> colour scheme. */
+    text-decoration: none; /* No underline to override the default <a> propeties and make the banner look more like a title. */
+}   
+.banner h1:hover { /* Styles for the main heading in the banner (Our Game Awards) when hovered */
+    text-decoration: underline; /* Underline on hover to show that it is a link.  */
+    color: #941B0C; /* red text color on hover to show that it is a link. */
+}
+.banner a{
+    text-decoration: none;/* No underline to override the default <a> properties */
+    color: #ffffff; /* White text color to match the banner */
+    
+}
+.banner a:hover { /* Styles for all links in the banner when hovered */
+    text-decoration: underline; /* Underline on hover to indicate it is a link */
+}
+.dropdown {/* Styles for the dropdown menu and title */
+    position: relative; /* Position relative to parent */
+    display: inline-block; /* Inline block for dropdown */
+    font-family: Short Stack, cursive; /* Font family for dropdown elements to match banner font */
+    font-size: 25px; /* Font size for dropdown title and its menu items. */
+    color: #ffffff; /* White text color to override default <a> properties. */
+}
+a:hover { /* default <a> properties for the rest of the page. It isn't mentioned earlier because the properties weren't working in the banner.*/
+    text-decoration: underline; /* Underline on hover */
+    color: #941B0C; /* red text color on hover */
+}  
+.dropdown-content { /* Styles for the dropdown menu items */
+  display: none; /* Hides dropdown content by default. */
+  position: absolute; /* positioned relative to the dropdown title (<h4>Years</h4>) */
+  background-color: #941B0C; /* Red background to match the colour pallette and show it is a link.*/
+  min-width: 160px; /* Minimum width of the dropdown menu */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow effect for the dropdown. The shadow is moved down by 8px and the shadow is blurred by 16 px. */
+  z-index: 1; /* Ensures dropdown appears above other elements. Higher z-index means it will appear above other propeties when we trigger it to appear. */
+}
+.dropdown-content a { padding: 10px; /* Adds padding to space each option. */ }
+
+.dropdown h4, .dropdown i, .dropdown a { display: inline-block; /* Makes the smaller banner elements sit together properly. */ }
+
+.Disclaimer { /* Styles for the link to the disclaimer */
+    margin-left: 50px; /* Space between disclaimer link and other elements */
+    font-size: 25px; /* Font size for the dropdown link. */
+    text-decoration: underline; /* Underline text so user know it is a link.*/
+}
+.dropdown:hover .fa-caret-right { /* Styles for the icon in the dropdown menu when hovered */
+    transform: rotate(90deg); /* Rotates the icon 90 degrees to face down */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+.dropdown:hover .dropdown-content { display: block; /* Shows the dropdown content when hovered */}
+
+.dropdown-content a:hover { /* Styles for the dropdown menu items when hovered */
+    background-color:#941B0C; /* Red background for the items on hover */
+    color: #ffffff; /* White text color so it stay white even when you hover over it unlike other links*/ 
+}
+ 
+h2{ /* Styles for the headings of each page. */
+    text-align: center; /* Centered text */
+    font-family: Short Stack, cursive; /* Font family for headings. */
+    font-size: 30px; /* Font size for h2 to make it stand out compared to the paragraph text. */
+}
+
+ p { /* Styles for the paragraph text. */
+    margin: 0 130px; /* Center the text and adds whitespace on the left and right. */
+    font-family: "Comic Neue"; /* Font family for paragraph text. */
+    font-size: 23px; /* Font size for paragraph text so that is is readable. */
+    line-height: 1.5; /* Line height for better readability */
+}
+
+.vote{ text-align: center; /* Centered text */} /* Styles for text guiding the user on how to vote. */
+
+.game{ /* Styles for the game images and their captions on their gamepage.  */
+    display: inline-block; /* This makes them sit side-by-side */
+    padding: 28px; /* Adds some space around the images */
+  text-align: center; /* Centers the caption below the image */
+}
+
+.game p { margin: 0; } /* Removes default margin from paragraphs so images can be next to each other */ 
+
+.game:hover { /* Styles for the game images when hovered */
+    transform: translateY(-4px) translateX(-2px); /* Moves the image slightly up and to the left on hover so the user know it can be clicked. */
+    background-color: #941B0C; /* Red background on hover. */
+  }
+
+.game a { /* Styles for the links in the game images text */
+    color: #ffffff; /* White text color by default because the background will be red.  */
+    text-decoration: none; /* No underline by default for aesthetics. */
+  }
+.game:hover a { /* Styles for the links in the game images text when hovered. */
+    color: #ffffff; /* White text color on hover, so it stays white unlike other links. */
+    text-decoration: underline; /*Underline on hover to show it is a link*/
+  }
+
+.bottom{ /* Styles for the bottom section of the page.*/
+    margin-bottom: 30px; /* Space between the bottom  and top section */
+    margin-top: 50px; /* Space between the bottom and the end of the page */
+}
+.GOW { /* Styles for the game cover images on their info page. This is the image that appears on the left of the blue box. */
+    float: left; /* Aligns the image to the left */
+    margin-top: 50px; /* Aligns image with the top of the text */
+    width: 25%; /* Makes the image take up 25% of the width of its container */
+    max-height: 650px; /* Sets a maximum height for the image */
+    padding:0 20px; /* Adds some space around the images */
+    margin-left: 60px; /* Moves image away from the left side of the page */
+}
+.GOP {  /*  Styles for the photo of the gameplay */
+    width: 600px; /* Match the width of the iframe */
+    height: 337.5px; /* Match the height of the iframe */
+    object-fit: cover; /* Ensures the image scales properly without distortion */
+    padding:0 20px; /* Adds some space around the images and the left and right */
+    margin: 20px 60px; /* Adds some space between the image groups */  
+}
+
+.indent{margin-left: 50px;} /* Adds an indent to the text so it is more readable. */
+
+.info{ /* Styles for the text box that contains the game information. */
+    margin:0; /* Removes default margin from paragraphs so images can be next to each other */
+    display:inline-block; /* Makes the text sit next to the image */
+    margin-top: 20px;  /* Space between the text and banner */
+    border: #254D55 solid 1px; /* Adds a border around the text */
+    background-color: #254D55; /* Light blue background */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Adds some space around the text */
+    padding-bottom: 10px; /* Adds some space around the text */
+    width: 1200px; /* sets the width of the text box to prevent any formatting errors inconsistencies with game cover that will be displayed on the left.*/ 
+}
+h3{ /* Styles for the subheadings in the bottom section of the page. */ 
+    display: inline-block; /* Makes the text sit next to the image */
+    margin: 0 80px ; /* Removes default margin from paragraphs so images can be next to each other */
+    font-family: Short Stack, cursive; /* Font family for headings. */
+    font-size: 25px; /* Font size for h3 */
+    margin-top: inherit; /* Inherits the margin from the parent element */
+}
+.right{ /* Styles for the "Gameplay" subheading */
+    position:absolute; /* Positions the element relative to its nearest positioned ancestor */
+    right: 170px; /* Moves the element to the right of the page and aspecifies the distances between the right edge of this element and its container. */
+    margin-right: 370px; /* Moves the Gameplay subheading to the right of the page above the video. */
+}
+iframe{ /* Styles for the video */
+    float: right; /* Aligns the video to the right */
+    padding: 20px; /* Adds some space around the images */
+    margin-right: 60px; /* Moves video away from the right side of the page */ 
+}
+.fa-solid.fa-left-long{ /* Styles for the left arrow icon used to go back. */
+    color: #ffffff; /* White color for the icon because it is inheriting a different color from the <a> tag */
+    float: left; /* Aligns the icon to the left */
+    margin-left: 100px; /*Space between icon and text*/
+    font-size: 300%; /* Makes the icon bigger */
+}
+.back{ /* Styles for the text that appears next to the left arrow icon. */
+    text-decoration: none; /* No underline */
+    visibility: none; /* Hides the element by default */
+}
+.hidden{ /* Styles for the text that appears when the left arrow icon is hovered */
+    visibility: hidden; /* Hides the element by default */
+    color : #ffffff; /* White text color */
+    display: inline; /* Makes the text sit next to the icon */
+    margin: 0;/* Removes default margin from paragraphs */
+}
+
+.fa-solid.fa-left-long:hover{ /* Styles for the left arrow icon when hovered */
+    transform: translateX(-6px); /* Moves the icon slightly to the left on hover to provide feedback to the user*/ 
+    color: #941B0C; /* Red color for the icon */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+.back:hover{text-decoration: none; /* No underline */}
+.back:hover .hidden{
+    visibility: visible; /* Shows the element on hover */
+    color : #ffffff; /* White text color */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+button{ /* Styles for the button to vote. */
+    font-size: 20px; /* Font size for button is the same of as the paragraph font size */
+    border: transparent; /* No border */
+    background-color: #941B0C; /* Red background to match the colour pallette*/
+    color: #ffffff; /* White text color to aintain consistency*/
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 4px; /* Rounded corners so that it looks like a button.*/
+    margin-left: 28px; /* Spaces the button away from the side of the page.*/
+}
+button:hover{ /* Styles for the button when hovered */
+    scale: 1.05; /* Slightly enlarges the button on hover to make the website more responsive */
+    transition: transform 0.2s; /* Adds a smooth transition effect for the scaling */
+}
+
+
+
